@@ -1,8 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop", "spaf.desktop\spaf.desktop.csproj", "{51100789-6660-44FE-B93D-350EEE244BDD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop", "src\spaf.desktop\spaf.desktop.csproj", "{51100789-6660-44FE-B93D-350EEE244BDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop.core", "spaf.desktop.core\spaf.desktop.core.csproj", "{E899EDA8-ECB0-43E5-883D-2F42520C9E86}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop.core", "src\spaf.desktop.core\spaf.desktop.core.csproj", "{D617DDD5-A1CE-4C94-A38C-578D356E186D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		{51100789-6660-44FE-B93D-350EEE244BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51100789-6660-44FE-B93D-350EEE244BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51100789-6660-44FE-B93D-350EEE244BDD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E899EDA8-ECB0-43E5-883D-2F42520C9E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E899EDA8-ECB0-43E5-883D-2F42520C9E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E899EDA8-ECB0-43E5-883D-2F42520C9E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E899EDA8-ECB0-43E5-883D-2F42520C9E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
