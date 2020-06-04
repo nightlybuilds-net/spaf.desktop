@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop", "src\spaf.de
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop.core", "src\spaf.desktop.core\spaf.desktop.core.csproj", "{D617DDD5-A1CE-4C94-A38C-578D356E186D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8B35A74F-7ABF-4BAF-BBBB-B8F9879502E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "examples", "examples", "{5BF981F1-DDD7-4CF4-B8E7-7117761A1521}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,9 @@ Global
 		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{51100789-6660-44FE-B93D-350EEE244BDD} = {8B35A74F-7ABF-4BAF-BBBB-B8F9879502E4}
+		{D617DDD5-A1CE-4C94-A38C-578D356E186D} = {8B35A74F-7ABF-4BAF-BBBB-B8F9879502E4}
 	EndGlobalSection
 EndGlobal
