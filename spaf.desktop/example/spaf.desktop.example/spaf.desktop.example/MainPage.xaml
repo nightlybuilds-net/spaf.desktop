@@ -4,11 +4,5 @@
              xmlns:local="clr-namespace:spaf.desktop.example"
              x:Class="spaf.desktop.example.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+        <WebView Source="https://www.google.com" />
 </ContentPage>
