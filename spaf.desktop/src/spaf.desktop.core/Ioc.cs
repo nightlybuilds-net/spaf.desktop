@@ -2,7 +2,7 @@ namespace spaf.desktop.core
 {
     internal static class Ioc
     {
-        public static IContainer Container { get; private set; }
+        public static IGenericContainer GenericContainer { get; private set; }
 
         // /// <summary>
         // /// Register all content page
@@ -22,9 +22,9 @@ namespace spaf.desktop.core
         //
         
 
-        internal static void UseContainer(IContainer container)
+        internal static void UseContainer(IGenericContainer genericContainer)
         {
-            Container = container;
+            GenericContainer = genericContainer;
         }
     }
 }

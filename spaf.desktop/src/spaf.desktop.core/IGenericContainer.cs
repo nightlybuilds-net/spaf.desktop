@@ -2,7 +2,7 @@ using System;
 
 namespace spaf.desktop.core
 {
-    public interface IContainer
+    public interface IGenericContainer
     {
         void Register<T>(bool transient) where T : class;
         void Register<T, TImpl>(bool transient) where TImpl : T;

@@ -7,7 +7,6 @@ namespace spaf.desktop.example.mac
         static void Main(string[] args)
         {
             NSApplication.Init();
-            NSApplication.SharedApplication.Delegate = new AppDelegate(); // add this line
             NSApplication.Main(args);
         }
     }

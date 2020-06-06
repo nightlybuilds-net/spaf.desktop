@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="..\..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.props" Condition="Exists('..\..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.props')" />
     <PropertyGroup>
         <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
         <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-        <ProjectGuid>{CB0C9172-9F91-4F89-961E-D509359E3C26}</ProjectGuid>
+        <ProjectGuid>{71B675FA-43C2-4932-9A7B-635C65A80776}</ProjectGuid>
         <ProjectTypeGuids>{A3F8F2AB-B479-4A4A-A458-A89E7DC349F1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
         <OutputType>Exe</OutputType>
         <RootNamespace>spaf.desktop.example.mac</RootNamespace>
@@ -48,18 +47,6 @@
     <ItemGroup>
         <Reference Include="System" />
         <Reference Include="System.Core" />
-        <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\packages\Xamarin.Forms.4.6.0.800\lib\Xamarin.Mac\Xamarin.Forms.Core.dll</HintPath>
-          <Private>True</Private>
-        </Reference>
-        <Reference Include="Xamarin.Forms.Platform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\packages\Xamarin.Forms.4.6.0.800\lib\Xamarin.Mac\Xamarin.Forms.Platform.dll</HintPath>
-          <Private>True</Private>
-        </Reference>
-        <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
-          <HintPath>..\..\packages\Xamarin.Forms.4.6.0.800\lib\Xamarin.Mac\Xamarin.Forms.Xaml.dll</HintPath>
-          <Private>True</Private>
-        </Reference>
         <Reference Include="Xamarin.Mac" />
     </ItemGroup>
     <ItemGroup>
@@ -71,7 +58,6 @@
     <ItemGroup>
         <None Include="Info.plist" />
         <None Include="Entitlements.plist" />
-        <None Include="packages.config" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Main.cs" />
@@ -85,18 +71,18 @@
         <InterfaceDefinition Include="Main.storyboard" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\spaf.desktop.example\spaf.desktop.example\spaf.desktop.example.csproj">
-        <Project>{1b52cef5-d46a-4163-b789-bb312d3801ea}</Project>
+      <ProjectReference Include="..\..\src\spaf.desktop.core\spaf.desktop.core.csproj">
+        <Project>{d617ddd5-a1ce-4c94-a38c-578d356e186d}</Project>
+        <Name>spaf.desktop.core</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\..\src\spaf.desktop.macos\spaf.desktop.macos.csproj">
+        <Project>{8b1059ab-a4cf-4f63-8bef-eec901d8cc23}</Project>
+        <Name>spaf.desktop.macos</Name>
+      </ProjectReference>
+      <ProjectReference Include="..\spaf.desktop.example\spaf.desktop.example.csproj">
+        <Project>{9296a0db-3477-4c46-838a-40a58a5fb421}</Project>
         <Name>spaf.desktop.example</Name>
       </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
-    <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
-      <PropertyGroup>
-        <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105.The missing file is {0}.</ErrorText>
-      </PropertyGroup>
-      <Error Condition="!Exists('..\..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.props'))" />
-      <Error Condition="!Exists('..\..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.targets'))" />
-    </Target>
-    <Import Project="..\..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.4.6.0.800\build\Xamarin.Forms.targets')" />
 </Project>

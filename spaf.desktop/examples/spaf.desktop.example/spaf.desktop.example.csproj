@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\icontainer.dryioc\icontainer.dryioc.csproj" />
+      <ProjectReference Include="..\..\src\spaf.desktop.core\spaf.desktop.core.csproj" />
+    </ItemGroup>
+
+</Project>
