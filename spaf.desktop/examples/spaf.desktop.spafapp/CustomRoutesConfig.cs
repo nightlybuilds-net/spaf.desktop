@@ -18,6 +18,13 @@ namespace Bridge.Spaf
                     Key = SpafApp.HomeId,
                     PageController = () => SpafApp.Container.Resolve<HomeViewModel>()
                 },
+                new PageDescriptor
+                {
+                    CanBeDirectLoad = ()=>true,
+                    HtmlLocation = ()=>"pages/second.html", // yout html location
+                    Key = SpafApp.SecondId,
+                    PageController = () => SpafApp.Container.Resolve<SecondViewModel>()
+                },
               
             };
         }

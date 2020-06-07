@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Reflection;
 using Bridge;
+using Bridge.Html5;
 using Bridge.Ioc;
 using Bridge.Messenger;
 using Bridge.Navigation;
@@ -18,6 +19,12 @@ namespace Bridge.Spaf
             Container = new BridgeIoc();
             ContainerConfig(); // config container
             Container.Resolve<INavigator>().InitNavigation(); // init navigation
+
+            Window.OnError = (message, url, number, columnNumber, error) =>
+            {
+                Console.WriteLine(error);
+                return false;
+            };
 
         }
 
@@ -44,6 +51,7 @@ namespace Bridge.Spaf
 
 
         public static string HomeId => "home";
+        public static string SecondId => "second";
        
         #endregion
 

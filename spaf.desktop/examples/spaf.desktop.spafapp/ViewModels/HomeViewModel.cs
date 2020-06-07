@@ -1,14 +1,21 @@
 using System;
 using System.Collections.Generic;
 using Bridge.Html5;
+using Bridge.Navigation;
 
 namespace Bridge.Spaf.ViewModels
 {
     public class HomeViewModel : LoadableViewModel
     {
+        private readonly INavigator _navigator;
         public override string ElementId() => SpafApp.HomeId;
 
         public string Test { get; set; }
+
+        public HomeViewModel(INavigator navigator)
+        {
+            this._navigator = navigator;
+        }
 
         public override void OnBeforeBinding(Dictionary<string, object> parameters)
         {
@@ -27,6 +34,11 @@ namespace Bridge.Spaf.ViewModels
             Console.WriteLine("hello");
 
             Global.Alert("Hello!");
+        }
+
+        public void GoToPage2()
+        {
+            this._navigator.Navigate(SpafApp.SecondId);
         }
     }
 }
