@@ -15,7 +15,7 @@ namespace spaf.desktop.core
 
         private DesktopBuilder(int webport)
         {
-            this._webServer = new WebServer(HttpListenerMode.Microsoft, $"http://*:{webport}");
+            this._webServer = new WebServer(HttpListenerMode.EmbedIO, $"http://*:{webport}");
         }
 
         public static DesktopBuilder Create(int webport)
@@ -52,6 +52,7 @@ namespace spaf.desktop.core
 
         public IDisposable Start()
         {
+            
             if(!this._staticFolderSetupped)
                 throw new SpafException("Static Folder Must be setupped");
             

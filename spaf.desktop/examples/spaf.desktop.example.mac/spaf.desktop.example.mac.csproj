@@ -97,38 +97,38 @@
         <Name>spaf.desktop.example</Name>
       </ProjectReference>
     </ItemGroup>
-<!--    <ItemGroup>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.console.js">-->
-<!--        <Link>wwwroot\bridge\bridge.console.js</Link>-->
-<!--      </Content>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.js">-->
-<!--        <Link>wwwroot\bridge\bridge.js</Link>-->
-<!--      </Content>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.meta.js">-->
-<!--        <Link>wwwroot\bridge\bridge.meta.js</Link>-->
-<!--      </Content>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\index.html">-->
-<!--        <Link>wwwroot\bridge\index.html</Link>-->
-<!--      </Content>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\index.min.html">-->
-<!--        <Link>wwwroot\bridge\index.min.html</Link>-->
-<!--      </Content>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\jquery-2.2.4.js">-->
-<!--        <Link>wwwroot\bridge\jquery-2.2.4.js</Link>-->
-<!--      </Content>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\jquery-2.2.4.min.js">-->
-<!--        <Link>wwwroot\bridge\jquery-2.2.4.min.js</Link>-->
-<!--      </Content>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\newtonsoft.json.js">-->
-<!--        <Link>wwwroot\bridge\newtonsoft.json.js</Link>-->
-<!--      </Content>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\spaf.desktop.meta.js">-->
-<!--        <Link>wwwroot\bridge\spaf.desktop.meta.js</Link>-->
-<!--      </Content>-->
-<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\spaf.desktop.spafapp.js">-->
-<!--        <Link>wwwroot\bridge\spaf.desktop.spafapp.js</Link>-->
-<!--      </Content>-->
-<!--    </ItemGroup>-->
+    <ItemGroup>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.console.js">
+        <Link>wwwroot\bridge\bridge.console.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.js">
+        <Link>wwwroot\bridge\bridge.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.meta.js">
+        <Link>wwwroot\bridge\bridge.meta.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\index.html">
+        <Link>wwwroot\bridge\index.html</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\index.min.html">
+        <Link>wwwroot\bridge\index.min.html</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\jquery-2.2.4.js">
+        <Link>wwwroot\bridge\jquery-2.2.4.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\jquery-2.2.4.min.js">
+        <Link>wwwroot\bridge\jquery-2.2.4.min.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\newtonsoft.json.js">
+        <Link>wwwroot\bridge\newtonsoft.json.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\spaf.desktop.meta.js">
+        <Link>wwwroot\bridge\spaf.desktop.meta.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\spaf.desktop.spafapp.js">
+        <Link>wwwroot\bridge\spaf.desktop.spafapp.js</Link>
+      </Content>
+    </ItemGroup>
 
  
     

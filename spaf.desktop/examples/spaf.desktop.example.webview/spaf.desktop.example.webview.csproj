@@ -5,4 +5,52 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\spaf.desktop\spaf.desktop.csproj" />
+      <ProjectReference Include="..\spaf.desktop.example\spaf.desktop.example.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Webview.Core" Version="0.0.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.console.js">
+        <Link>wwwroot\bridge\bridge.console.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.js">
+        <Link>wwwroot\bridge\bridge.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.meta.js">
+        <Link>wwwroot\bridge\bridge.meta.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\index.html">
+        <Link>wwwroot\bridge\index.html</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\index.min.html">
+        <Link>wwwroot\bridge\index.min.html</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\jquery-2.2.4.js">
+        <Link>wwwroot\bridge\jquery-2.2.4.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\jquery-2.2.4.min.js">
+        <Link>wwwroot\bridge\jquery-2.2.4.min.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\newtonsoft.json.js">
+        <Link>wwwroot\bridge\newtonsoft.json.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\spaf.desktop.meta.js">
+        <Link>wwwroot\bridge\spaf.desktop.meta.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\bridge\spaf.desktop.spafapp.js">
+        <Link>wwwroot\bridge\spaf.desktop.spafapp.js</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\index.html">
+        <Link>wwwroot\index.html</Link>
+      </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\pages\home.html">
+        <Link>wwwroot\pages\home.html</Link>
+      </Content>
+    </ItemGroup>
+
 </Project>
