@@ -134,6 +134,9 @@
       <Content Include="..\spaf.desktop.example\wwwroot\pages\home.html">
         <Link>wwwroot\pages\home.html</Link>
       </Content>
+      <Content Include="..\spaf.desktop.example\wwwroot\plugin\ko.js">
+        <Link>wwwroot\plugin\ko.js</Link>
+      </Content>
     </ItemGroup>
 
  
