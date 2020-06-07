@@ -1,6 +1,7 @@
 ﻿using System;
 using AppKit;
 using Foundation;
+using WebKit;
 
 namespace spaf.desktop.example.mac
 {
@@ -14,7 +15,9 @@ namespace spaf.desktop.example.mac
         {
             base.ViewDidLoad();
 
-            
+            var webView = new WKWebView(this.View.Frame,new WKWebViewConfiguration());
+            this.View.AddSubview(webView);
+            webView.LoadRequest(new NSUrlRequest(new NSUrl("http://localhost:8080")));
         }
 
         public override NSObject RepresentedObject

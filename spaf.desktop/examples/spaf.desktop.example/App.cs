@@ -7,7 +7,7 @@ namespace spaf.desktop.example
 {
     public class App
     {
-        public static readonly Container Container = new Container();
+        public static readonly Container Container = new Container(rules => rules.WithoutThrowOnRegisteringDisposableTransient());
         
         public static void Start(Action<IGenericContainer> registerPlatformSpecific)
         {

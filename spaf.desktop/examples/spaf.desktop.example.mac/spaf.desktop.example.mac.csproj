@@ -45,6 +45,18 @@
         <PlatformTarget>x86</PlatformTarget>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="DryIoc, Version=4.2.0.0, Culture=neutral, PublicKeyToken=dfbf2bd50fcf7768">
+          <HintPath>..\..\packages\DryIoc.dll.4.2.0\lib\netstandard2.0\DryIoc.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="EmbedIO, Version=3.4.3.0, Culture=neutral, PublicKeyToken=5e5f048b6e04267e">
+          <HintPath>..\..\packages\EmbedIO.3.4.3\lib\netstandard2.0\EmbedIO.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
+        <Reference Include="Swan.Lite, Version=3.0.0.0, Culture=neutral, PublicKeyToken=30c707c872729fff">
+          <HintPath>..\..\packages\Unosquare.Swan.Lite.3.0.0\lib\netstandard2.0\Swan.Lite.dll</HintPath>
+          <Private>True</Private>
+        </Reference>
         <Reference Include="System" />
         <Reference Include="System.Core" />
         <Reference Include="Xamarin.Mac" />
@@ -58,6 +70,7 @@
     <ItemGroup>
         <None Include="Info.plist" />
         <None Include="Entitlements.plist" />
+        <None Include="packages.config" />
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Main.cs" />
@@ -84,5 +97,40 @@
         <Name>spaf.desktop.example</Name>
       </ProjectReference>
     </ItemGroup>
+<!--    <ItemGroup>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.console.js">-->
+<!--        <Link>wwwroot\bridge\bridge.console.js</Link>-->
+<!--      </Content>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.js">-->
+<!--        <Link>wwwroot\bridge\bridge.js</Link>-->
+<!--      </Content>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\bridge.meta.js">-->
+<!--        <Link>wwwroot\bridge\bridge.meta.js</Link>-->
+<!--      </Content>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\index.html">-->
+<!--        <Link>wwwroot\bridge\index.html</Link>-->
+<!--      </Content>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\index.min.html">-->
+<!--        <Link>wwwroot\bridge\index.min.html</Link>-->
+<!--      </Content>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\jquery-2.2.4.js">-->
+<!--        <Link>wwwroot\bridge\jquery-2.2.4.js</Link>-->
+<!--      </Content>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\jquery-2.2.4.min.js">-->
+<!--        <Link>wwwroot\bridge\jquery-2.2.4.min.js</Link>-->
+<!--      </Content>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\newtonsoft.json.js">-->
+<!--        <Link>wwwroot\bridge\newtonsoft.json.js</Link>-->
+<!--      </Content>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\spaf.desktop.meta.js">-->
+<!--        <Link>wwwroot\bridge\spaf.desktop.meta.js</Link>-->
+<!--      </Content>-->
+<!--      <Content Include="..\spaf.desktop.example\wwwroot\bridge\spaf.desktop.spafapp.js">-->
+<!--        <Link>wwwroot\bridge\spaf.desktop.spafapp.js</Link>-->
+<!--      </Content>-->
+<!--    </ItemGroup>-->
+
+ 
+    
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Mac\Xamarin.Mac.CSharp.targets" />
 </Project>
