@@ -16,6 +16,7 @@ namespace spaf.desktop.core
         private DesktopBuilder(int webport)
         {
             this._webServer = new WebServer(HttpListenerMode.EmbedIO, $"http://*:{webport}");
+            this._webServer.WithModule(new RpcServer("/rpc"));
         }
 
         public static DesktopBuilder Create(int webport)

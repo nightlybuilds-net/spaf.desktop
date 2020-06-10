@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Bridge.Html5;
 using Bridge.Navigation;
+using WebSocketSample;
 
 namespace Bridge.Spaf.ViewModels
 {
@@ -19,6 +20,8 @@ namespace Bridge.Spaf.ViewModels
 
         public override void OnBeforeBinding(Dictionary<string, object> parameters)
         {
+            var sockettone = new Sockettone();
+            
             this.Test = "Antani!";
             base.OnBeforeBinding(parameters);
         }

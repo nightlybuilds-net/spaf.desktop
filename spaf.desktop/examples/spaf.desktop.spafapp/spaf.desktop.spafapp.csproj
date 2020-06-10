@@ -109,6 +109,12 @@
     <ItemGroup>
       <Content Include="bridge.json" />
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\spaf.desktop\spaf.desktop.csproj">
+        <Project>{51100789-6660-44fe-b93d-350eee244bdd}</Project>
+        <Name>spaf.desktop</Name>
+      </ProjectReference>
+    </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <Import Project="..\..\packages\Bridge.Min.17.10.0\build\Bridge.Min.targets" Condition="Exists('..\..\packages\Bridge.Min.17.10.0\build\Bridge.Min.targets')" />
     <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
