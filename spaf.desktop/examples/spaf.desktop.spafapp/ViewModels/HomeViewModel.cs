@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using Bridge.Html5;
 using Bridge.Navigation;
-using WebSocketSample;
+using spaf.desktop;
 
 namespace Bridge.Spaf.ViewModels
 {

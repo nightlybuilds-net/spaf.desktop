@@ -111,7 +111,7 @@
     </ItemGroup>
     <ItemGroup>
       <ProjectReference Include="..\..\src\spaf.desktop\spaf.desktop.csproj">
-        <Project>{51100789-6660-44fe-b93d-350eee244bdd}</Project>
+        <Project>{d366b43e-b194-4324-9e20-2e81675f500f}</Project>
         <Name>spaf.desktop</Name>
       </ProjectReference>
     </ItemGroup>

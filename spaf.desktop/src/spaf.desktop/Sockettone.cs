@@ -1,7 +1,7 @@
 using System;
 using Bridge.Html5;
 
-namespace WebSocketSample
+namespace spaf.desktop
 {
     public class Sockettone
     {
@@ -12,10 +12,10 @@ namespace WebSocketSample
         {
             this.Socket = new WebSocket(RPC_URI);
 
-            Socket.OnOpen += OnSocketOpen;
-            Socket.OnClose += OnSocketClose;
-            Socket.OnMessage += OnSocketMessage;
-            Socket.OnError += OnSocketError;
+            this.Socket.OnOpen += this.OnSocketOpen;
+            this.Socket.OnClose += this.OnSocketClose;
+            this.Socket.OnMessage += this.OnSocketMessage;
+            this.Socket.OnError += this.OnSocketError;
         }
 
         public void Connect()

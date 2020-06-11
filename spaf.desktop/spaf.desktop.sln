@@ -1,7 +1,5 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop", "src\spaf.desktop\spaf.desktop.csproj", "{51100789-6660-44FE-B93D-350EEE244BDD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop.core", "src\spaf.desktop.core\spaf.desktop.core.csproj", "{D617DDD5-A1CE-4C94-A38C-578D356E186D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{8B35A74F-7ABF-4BAF-BBBB-B8F9879502E4}"
@@ -20,16 +18,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop.spafapp", "exa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop.example.webview", "examples\spaf.desktop.example.webview\spaf.desktop.example.webview.csproj", "{3D6634EE-652A-4A82-BCF9-9A28706E1B6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "spaf.desktop", "src\spaf.desktop\spaf.desktop.csproj", "{D366B43E-B194-4324-9E20-2E81675F500F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{51100789-6660-44FE-B93D-350EEE244BDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51100789-6660-44FE-B93D-350EEE244BDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51100789-6660-44FE-B93D-350EEE244BDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51100789-6660-44FE-B93D-350EEE244BDD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D617DDD5-A1CE-4C94-A38C-578D356E186D}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -58,9 +54,12 @@ Global
 		{3D6634EE-652A-4A82-BCF9-9A28706E1B6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D6634EE-652A-4A82-BCF9-9A28706E1B6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D6634EE-652A-4A82-BCF9-9A28706E1B6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D366B43E-B194-4324-9E20-2E81675F500F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D366B43E-B194-4324-9E20-2E81675F500F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D366B43E-B194-4324-9E20-2E81675F500F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D366B43E-B194-4324-9E20-2E81675F500F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{51100789-6660-44FE-B93D-350EEE244BDD} = {8B35A74F-7ABF-4BAF-BBBB-B8F9879502E4}
 		{D617DDD5-A1CE-4C94-A38C-578D356E186D} = {8B35A74F-7ABF-4BAF-BBBB-B8F9879502E4}
 		{9296A0DB-3477-4C46-838A-40A58A5FB421} = {5BF981F1-DDD7-4CF4-B8E7-7117761A1521}
 		{71B675FA-43C2-4932-9A7B-635C65A80776} = {5BF981F1-DDD7-4CF4-B8E7-7117761A1521}
@@ -68,5 +67,6 @@ Global
 		{8B1059AB-A4CF-4F63-8BEF-EEC901D8CC23} = {8B35A74F-7ABF-4BAF-BBBB-B8F9879502E4}
 		{1BD4DFE4-DF8B-458D-9336-B3A51BAA06C2} = {5BF981F1-DDD7-4CF4-B8E7-7117761A1521}
 		{3D6634EE-652A-4A82-BCF9-9A28706E1B6F} = {5BF981F1-DDD7-4CF4-B8E7-7117761A1521}
+		{D366B43E-B194-4324-9E20-2E81675F500F} = {8B35A74F-7ABF-4BAF-BBBB-B8F9879502E4}
 	EndGlobalSection
 EndGlobal
