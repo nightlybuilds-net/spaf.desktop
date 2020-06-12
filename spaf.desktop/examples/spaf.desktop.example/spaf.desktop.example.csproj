@@ -7,6 +7,7 @@
     <ItemGroup>
       <ProjectReference Include="..\..\src\icontainer.dryioc\icontainer.dryioc.csproj" />
       <ProjectReference Include="..\..\src\spaf.desktop.core\spaf.desktop.core.csproj" />
+      <ProjectReference Include="..\..\src\spaf.desktop\spaf.desktop.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -22,6 +23,10 @@
         <EmbeddedResource Include="wwwroot\plugin\*.*">
             <CopyToOutputDirectory>Always</CopyToOutputDirectory>
         </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="wwwroot\bridge" />
     </ItemGroup>
 
 <!--    <ItemGroup>-->

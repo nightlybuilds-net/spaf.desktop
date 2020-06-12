@@ -16,6 +16,8 @@ namespace Bridge.Spaf
 
         public static void Main()
         {
+            var antani = typeof(BridgeNavigatorWithRouting).GetConstructors();
+            
             Container = new BridgeIoc();
             ContainerConfig(); // config container
             Container.Resolve<INavigator>().InitNavigation(); // init navigation
