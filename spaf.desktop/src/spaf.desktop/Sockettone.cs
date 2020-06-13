@@ -16,6 +16,8 @@ namespace spaf.desktop
             this.Socket.OnClose += this.OnSocketClose;
             this.Socket.OnMessage += this.OnSocketMessage;
             this.Socket.OnError += this.OnSocketError;
+            
+            this.Socket.Send("ciao");
         }
 
         public void Connect()
