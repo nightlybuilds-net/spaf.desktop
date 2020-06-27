@@ -1,5 +1,6 @@
 using System;
 using Bridge.Html5;
+using Newtonsoft.Json;
 
 namespace spaf.desktop
 {
@@ -17,7 +18,6 @@ namespace spaf.desktop
             this.Socket.OnMessage += this.OnSocketMessage;
             this.Socket.OnError += this.OnSocketError;
             
-            this.Socket.Send("ciao");
         }
 
         public void Connect()
@@ -43,6 +43,15 @@ namespace spaf.desktop
         private void OnSocketOpen(Event obj)
         {
             Console.WriteLine(obj);
+            var rpcRequest = new RpcRequest
+            {
+                Service = "RemoteTest",
+                Method = "Prova",
+                Parameters = new object[]{"franco",1}
+            };
+
+            
+            this.Socket.Send(JsonConvert.SerializeObject(rpcRequest));
         }
 
     }

@@ -6,7 +6,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\..\src\spaf.desktop.old\spaf.desktop.old.csproj" />
       <ProjectReference Include="..\spaf.desktop.example\spaf.desktop.example.csproj" />
     </ItemGroup>
 
